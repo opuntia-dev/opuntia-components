@@ -1,2 +1,3 @@
 # opuntia-ui
-🌵 Vue 3 UI library starter template.
+
+🌵 Vue 3 component library starter template, supports docs.
