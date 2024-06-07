@@ -1,0 +1,33 @@
+{
+  "name": "@opuntia-ui/theme",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Theme for Opuntia UI.",
+  "keywords": [
+    "theme",
+    "opuntia",
+    "opuntia-ui"
+  ],
+  "exports": {
+    ".": {
+      "dev": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "stub": "tsup --watch",
+    "build": "tsup"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  }
+}

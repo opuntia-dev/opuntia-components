@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": false,
+    "lib": [
+      "es2018",
+      "dom",
+      "dom.iterable"
+    ],
+    "types": [
+      "node",
+      "jsdom",
+      "vite/client",
+      "vitest/globals"
+    ],
+    "declaration": false,
+    "outDir": "./dist"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.d.ts",
+    "**/*.vue"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "opuntia-ui",
+  "type": "module",
+  "version": "0.7.0",
+  "description": "Opuntia UI components library.",
+  "keywords": [
+    "vue",
+    "component library",
+    "ui",
+    "vue",
+    "components",
+    "opuntia",
+    "opuntia-ui"
+  ],
+  "exports": {
+    ".": {
+      "dev": "./src/index.ts",
+      "types": "./dist/types/opuntia-ui/src/index.d.ts",
+      "import": "./dist/opuntia-ui.js",
+      "require": "./dist/opuntia-ui.umd.cjs"
+    },
+    "./*": "./dist/*",
+    "./volar": "./src/volar.d.ts",
+    "./style.css": "./dist/style.css"
+  },
+  "main": "./dist/opuntia-ui.umd.cjs",
+  "module": "./dist/opuntia-ui.js",
+  "types": "./dist/types/opuntia-ui/src/index.d.ts",
+  "files": [
+    "./src/volar.d.ts",
+    "dist"
+  ],
+  "scripts": {
+    "stub": "vue-tsc --declaration --emitDeclarationOnly --skipLibCheck && vite build --watch",
+    "build": "vue-tsc --declaration --emitDeclarationOnly --skipLibCheck && vite build"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "dependencies": {
+    "@opuntia-ui/components": "workspace:*",
+    "@opuntia-ui/theme": "workspace:*",
+    "@opuntia-ui/utils": "workspace:*"
+  }
+}

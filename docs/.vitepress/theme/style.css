@@ -1,0 +1,68 @@
+:root {
+  --vp-c-indigo-1: #0ea5e9;
+  --vp-c-indigo-2: #0284c7;
+  --vp-c-indigo-3: #0369a1;
+  --vp-c-indigo-soft: #0369a129;
+}
+
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
+      #0ea5e9 30%,
+      #0369a129);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg,
+      #0ea5e9 50%,
+      #0369a129 50%);
+  --vp-home-hero-image-filter: blur(40px);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,
+h2 {
+  border: none !important;
+}
+
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+.vp-doc table {
+  width: 100%;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc table td,
+th {
+  border: none !important;
+  min-width: 10rem;
+}
+
+.vp-doc table td:first-child {
+  width: 15%;
+  white-space: nowrap;
+}
+
+.vp-doc table td:nth-child(2) {
+  width: 28%;
+}
+
+.vp-doc table tbody>tr {
+  background: none !important;
+}

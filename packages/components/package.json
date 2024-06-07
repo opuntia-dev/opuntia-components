@@ -1,0 +1,39 @@
+{
+  "name": "@opuntia-ui/components",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Components for Opuntia UI.",
+  "keywords": [
+    "vue",
+    "vue3",
+    "components",
+    "opuntia",
+    "opuntia-ui"
+  ],
+  "exports": {
+    ".": {
+      "dev": "./src/index.ts",
+      "types": "./dist/components/src/index.d.ts",
+      "import": "./dist/components.js",
+      "require": "./dist/components.umd.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/components.umd.cjs",
+  "module": "./dist/components.js",
+  "types": "./dist/components/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "stub": "vue-tsc --declaration --emitDeclarationOnly --skipLibCheck && vite build --watch",
+    "build": "vue-tsc --declaration --emitDeclarationOnly --skipLibCheck && vite build"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "dependencies": {
+    "@opuntia-ui/theme": "workspace:*",
+    "@opuntia-ui/utils": "workspace:*"
+  }
+}

@@ -1,0 +1,15 @@
+:root {
+  --op-font-size-min: 12px;
+  --op-font-size-small: 14px;
+  --op-font-size: 16px;
+  --op-font-size-normal: 16px;
+  --op-font-size-large: 20px;
+  --op-font-size-max: 28px;
+
+  --op-color-base: #333333;
+  --op-color-primary: #0ea5e9;
+}
+
+:root.dark {
+  --op-color-base: #ffffff;
+}

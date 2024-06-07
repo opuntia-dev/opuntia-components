@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "@opuntia-ui/components": [
+        "./packages/components/src/index"
+      ],
+      "@opuntia-ui/theme": [
+        "./packages/theme/src/index"
+      ],
+      "@opuntia-ui/utils": [
+        "./packages/utils/src/index"
+      ],
+      "opuntia-ui": [
+        "./packages/opuntia-ui/src/index"
+      ]
+    },
+    "resolveJsonModule": true,
+    "allowJs": false,
+    "strict": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "**/node_modules/**",
+    "**/dist/**"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "types": [
+      "vite/client"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.vue"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    ".vitepress/cache"
+  ]
+}
